@@ -619,6 +619,11 @@ nav .overlay-bg {
     color: white;
 }
 
+.project-card h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .project-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 28px -8px rgba(118, 60, 172, 0.45);
@@ -695,3 +700,4 @@ footer {
     outline: 3px solid rgba(14, 165, 164, 0.4);
     outline-offset: 2px;
 }
+
