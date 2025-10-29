@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Primary Meta Tags -->
+    <title>Cyber Safety | Learn to Protect, Build to Defend</title>
+    <meta name="title" content="Cyber Safety | Learn to Protect, Build to Defend">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/CS.png" type="image/x-icon">
+
+    <!-- Loads -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<header>
+    <nav class="row align-items-start" id="nav-bar">
+        <div class="nav-section nav-section-left col">
+            <ul class="nav-items nav-items-left">
+                <li class="nav-item nav-item-btn" id="menu-btn-li"><a class="fa-solid fa-bars" id="menu-btn"></a>
+                </li>
+                <li class="nav-item nav-item-logo">
+                    <a href="./">
+                        <h1>CS</h1>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-items nav-items-right" id="intro-items">
+                <li class="nav-item nav-item-an"><a href="#home">Home</a></li>
+                <li class="nav-item nav-item-an"><a href="#info-top">About</a></li>
+                <li class="nav-item nav-item-an"><a href="#contact-top">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-section nav-section-middle col" id="search-section">
+            <form class="input-group" role="search" id="search-form">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search..."
+                    aria-describedby="search-btn" id="searchInput">
+                <button class="btn btn-primary" type="button" id="form-search-btn"><span
+                        class="fa-solid fa-magnifying-glass"></span></button>
+            </form>
+        </div>
+        <div class="nav-section nav-section-right col">
+            <ul class="nav-items nav-items-left" id="shop-items">
+                <li class="nav-item nav-item-menu">
+                    <div class="d-flex dropdown-hover-all">
+                        <div class="dropdown dropdown-main">
+                            <a class="dropdown-toggle main-dropdown-toggle" href="#info-top" id="ProjectsDropDownMenu"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Info
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="ProjectsDropDownMenu">
+                                <a class="dropdown-item" href="#info-top">Cybersecurity</a>
+                                <a class="dropdown-item" href="#info-top">Why?</a>
+                                <a class="dropdown-item" href="#safety-top">How?</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item nav-item-menu">
+                    <div class="d-flex dropdown-hover-all">
+                        <div class="dropdown dropdown-main">
+                            <a class="dropdown-toggle main-dropdown-toggle" href="#attacks-top" id="SkillsDropDownMenu"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Cyber Attacks
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="SkillsDropDownMenu">
+                                <a class="dropdown-item" href="#attacks-top">Viruses & Malware</a>
+                                <a class="dropdown-item" href="#attacks-top">Phishing</a>
+                                <a class="dropdown-item" href="#attacks-top">Ransomware</a>
+                                <a class="dropdown-item" href="#attacks-top">Social Engineering</a>
+                                <a class="dropdown-item" href="#attacks-top">Deepfake Attacks</a>
+                                <a class="dropdown-item" href="#attacks-top">Spyware</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item nav-item-menu">
+                    <div class="d-flex dropdown-hover-all">
+                        <div class="dropdown dropdown-main">
+                            <a class="dropdown-toggle main-dropdown-toggle" href="#safety-top" id="ServicesDropDownMenu"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Staying Safe
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="ServicesDropDownMenu">
+                                <a class="dropdown-item" href="#safety-top">Strong Passwords</a>
+                                <a class="dropdown-item" href="#safety-top">2 Factor Authentication</a>
+                                <a class="dropdown-item" href="#safety-top">Avoid Suspicious Links</a>
+                                <a class="dropdown-item" href="#safety-top">Device Security</a>
+                                <a class="dropdown-item" href="#safety-top">Social Media Security</a>
+                                <a class="dropdown-item" href="#safety-top">Cloud Security</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav-items nav-items-right">
+                <li class="nav-item nav-item-btn"><a class="fa-brands fa-github" href="https://github.com/MarzanurZarif"
+                        title="GitHub"></a>
+                </li>
+                <li class="nav-item nav-item-btn"><a class="fa-brands fa-facebook"
+                        href="https://www.facebook.com/MarzanurZarif" title="Facebook"></a>
+                </li>
+                <li class="nav-item nav-item-btn"><a class="fa-brands fa-whatsapp" href="https://wa.me/+8801552545262"
+                        title="WhatsApp"></a>
+                </li>
+                <li class="nav-item nav-item-btn"><a class="fa-solid fa-magnifying-glass" id="search-btn"></a></li>
+            </ul>
+        </div>
+        <div class="overlay-bg" id="overlay-bg"></div>
+    </nav>
+</header>
+
+<body>
+
+    <!-- HERO -->
+    <section id="home" class="hero-dark-gradient px-3">
+        <div class="container">
+            <main id="home" class="hero-bg py-16">
+                <div class="max-w-6xl mx-auto px-6">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <section class="space-y-6">
+                            <h1 class="text-4xl md:text-5xl font-extrabold">Cyber Safety <br> Learn to Protect, Build to
+                                Defend
+                            </h1>
+                            <p class="text-slate-200/90 text-lg">Stay Safe Online, is all about the simple ways to
+                                protect yourself, your family and your business from online threats.</p>
+                            <div class="flex gap-3">
+                                <a href="#safety-top"
+                                    class="bg-white text-slate-900 px-4 py-2 rounded-md font-semibold shadow">Safety</a>
+                                <a href="#info-top" class="border border-white/20 px-4 py-2 rounded-md">Why
+                                    Cybersecurity?</a>
+                            </div>
+
+                            <div class="mt-4 grid grid-cols-2 gap-3 max-w-sm">
+                                <a class="p-3 glass rounded-md" href="#info-top">
+                                    <h4 class="font-semibold mb-3">Cybersecurity</h4>
+                                    <p class="text-sm text-slate-200/80">What is cybersecurity and why it matters?</p>
+                                </a>
+                                <a class="p-3 glass rounded-md" href="#safety-top">
+                                    <h4 class="font-semibold mb-3">Safety</h4>
+                                    <p class="text-sm text-slate-200/80">Ways to stay safe online.</p>
+                                </a>
+                            </div>
+                        </section>
+
+                        <aside class="p-6 glass rounded-2xl">
+                            <h3 class="text-xl font-bold mb-3">Is your password strong enough?</h3>
+                            <label class="block text-sm mb-2">Enter a password</label>
+                            <input id="pw_auto" type="text" placeholder="Try: Pa$$w0rd123"
+                                class="w-full p-3 rounded-md bg-transparent border border-slate-700" disabled />
+                            <div class="mt-3">
+                                <div class="h-3 rounded bg-slate-700">
+                                    <div id="strength_auto" class="h-3 rounded bg-slate-700"></div>
+                                </div>
+                                <p id="strength-label_auto" class="mt-2 text-sm text-slate-200/80">Strength: —</p>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <div class="divider" id="info-top"></div>
+
+    <!-- info -->
+    <section id="info" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <h2 class="section-title fw-bold mb-3">Cyber Security</h2>
+                    <p class="text-muted-2 mb-3">
+                        Cybersecurity means protecting computers, networks, and data from digital attacks, theft, and
+                        damage. It is the practice of protecting internet-connected systems, networks, software, and
+                        data from digital attacks. Just like you lock your house, cybersecurity locks your digital life.
+                    </p>
+                    <p class="text-muted-2 mb-4">
+                        We depend on the internet every day — for study, banking, shopping, and entertainment.
+                        Without proper cybersecurity, anyone can fall victim to hacking or data theft.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge project-tag bg-dark text-light">Cybersecurity</span>
+                        <span class="badge project-tag bg-dark text-light">Cyber Safety</span>
+                        <span class="badge project-tag bg-dark text-light">Online Protection</span>
+                        <span class="badge project-tag bg-dark text-light">Tech Safety</span>
+                        <span class="badge project-tag bg-dark text-light">Cyber Awareness</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-4 rounded-4" style="background:#0f0a1f;border:1px solid rgba(255,255,255,.08);">
+                        <h2 class="section-title fw-bold mb-3">Why It Matters?</h2>
+                        <p class="text-muted-2 mb-3">
+                            We depend on the internet every day — for study, banking, shopping, and entertainment.
+                            Without proper cybersecurity, anyone can fall victim to hacking or data theft. <br> <br>
+                            <i class="fa-solid fa-circle"></i> Protects personal and financial data <br>
+                            <i class="fa-solid fa-circle"></i> Prevents misuse of private information <br>
+                            <i class="fa-solid fa-circle"></i> Keeps organizations and individuals safe <br>
+                            <i class="fa-solid fa-circle"></i> Avoid data leaks and misuse of data <br>
+                            <i class="fa-solid fa-circle"></i> Safeguards against cyber threats and attacks
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider" id="attacks-top"></div>
+
+    <!-- attacks -->
+    <section id="attacks" class="py-5">
+        <div class="container">
+            <h2 class="section-title fw-bold text-center mb-4">Cyber Attacks</h2>
+            <p class="text-center text-muted-2 mb-5">Common cyber attacks we fall for</p>
+            <div class="row g-4" id="attacks-cont">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="text-decoration-none">
+                        <div class="project-card rounded-4 p-4 h-100">
+                            <img src="./assets/images/malware.png" alt="" class="rounded-4 ">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">Viruses & Malware</h5>
+                            </div>
+                            <p class="text-muted-2">Programs that enter your device without permission and can damage
+                                files, slow down your system, or steal data. <br> <strong>Example:</strong> A crack
+                                download that secretly installs harmful software.</p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge project-tag bg-dark text-light">Cyber Attack</span>
+                                <span class="badge project-tag bg-dark text-light">Virus</span>
+                                <span class="badge project-tag bg-dark text-light">Malware</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="text-decoration-none">
+                        <div class="project-card rounded-4 p-4 h-100">
+                            <img src="./assets/images/fishing.png" alt="" class="rounded-4 ">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">Phishing</h5>
+                            </div>
+                            <p class="text-muted-2">Fake emails or messages that look real and try to trick you into
+                                revealing passwords or clicking dangerous links. <br> <strong>Example:</strong> Your
+                                bank account is locked. Click here to verify. Lottery winning site.</p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge project-tag bg-dark text-light">Cyber Attack</span>
+                                <span class="badge project-tag bg-dark text-light">Links</span>
+                                <span class="badge project-tag bg-dark text-light">Steal</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="text-decoration-none">
+                        <div class="project-card rounded-4 p-4 h-100">
+                            <img src="./assets/images/ran.png" alt="" class="rounded-4 ">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">Ransomware</h5>
+                            </div>
+                            <p class="text-muted-2">A type of malware that locks your files and demands money to unlock
+                                them.
+                                <br> <strong>Example:</strong> Hackers encrypt company data and ask for payment to
+                                restore it.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge project-tag bg-dark text-light">Cyber Attack</span>
+                                <span class="badge project-tag bg-dark text-light">Money</span>
+                                <span class="badge project-tag bg-dark text-light">Ransome</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="text-decoration-none">
+                        <div class="project-card rounded-4 p-4 h-100">
+                            <img src="./assets/images/scam.png" alt="" class="rounded-4 ">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">Social Engineering</h5>
+                            </div>
+                            <p class="text-muted-2">When someone manipulates you into giving personal information or
+                                doing something unsafe.
+                                <br> <strong>Example:</strong> A “friend” asking for your OTP code.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge project-tag bg-dark text-light">Cyber Attack</span>
+                                <span class="badge project-tag bg-dark text-light">Scam Calls</span>
+                                <span class="badge project-tag bg-dark text-light">OTP</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="text-decoration-none">
+                        <div class="project-card rounded-4 p-4 h-100">
+                            <img src="./assets/images/deepfake.png" alt="" class="rounded-4 ">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">Deepfake Attacks</h5>
+                            </div>
+                            <p class="text-muted-2">Utilize AI to create realistic fake audio or video to trick victims
+                                into taking malicious actions.
+                                <br> <strong>Example:</strong> Your close ones voice cloned and asking for money.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge project-tag bg-dark text-light">Cyber Attack</span>
+                                <span class="badge project-tag bg-dark text-light">AI</span>
+                                <span class="badge project-tag bg-dark text-light">Clone</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="text-decoration-none">
+                        <div class="project-card rounded-4 p-4 h-100">
+                            <img src="./assets/images/spyware.png" alt="" class="rounded-4 ">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">Spyware</h5>
+                            </div>
+                            <p class="text-muted-2">Secretly monitors user activity to collect sensitive data, such as
+                                passwords or credit card information.
+                                <br> <strong>Example:</strong> Key logger secretly capturing all keystrokes on a user's
+                                device.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge project-tag bg-dark text-light">Cyber Attack</span>
+                                <span class="badge project-tag bg-dark text-light">Record</span>
+                                <span class="badge project-tag bg-dark text-light">Spy</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="divider" id="safety-top"></div>
+
+    <!-- safety -->
+    <section id="safety" class="py-5">
+        <div class="container">
+            <h2 class="section-title fw-bold text-center mb-4">Staying Safe</h2>
+            <p class="text-center text-muted-2 mb-5">Ways to stay safe and protected online</p>
+
+            <div class="p-6 glass rounded-2xl mb-5">
+                <h3 class="text-xl font-bold mb-3">Password Strength Checker</h3>
+                <label class="block text-sm mb-2">Enter a password</label>
+                <input id="pw" type="password" placeholder="Try: Pa$$w0rd123"
+                    class="w-full p-3 rounded-md bg-transparent border border-slate-700" />
+                <div class="mt-3">
+                    <div class="h-3 rounded bg-slate-700">
+                        <div id="strength" class="h-3 rounded bg-slate-700"></div>
+                    </div>
+                    <p id="strength-label" class="mt-2 text-sm text-slate-200/80">Strength: —</p>
+                </div>
+            </div>
+
+            <div class="row g-4" id="safety-cont">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="text-decoration-none">
+                        <div class="project-card rounded-4 p-4 h-100">
+                            <img src="./assets/images/password.png" alt="" class="rounded-4 ">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">Strong Passwords</h5>
+                            </div>
+                            <p class="text-muted-2">Uppercase & Lowercase Characters
+                                Numbers & Symbols <br>
+                                8-12 Character Passwords <br>
+                                Avoid Personal Info & same passwords<br>
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge project-tag bg-dark text-light">Cyber Safety</span>
+                                <span class="badge project-tag bg-dark text-light">Strong Passwords</span>
+                                <span class="badge project-tag bg-dark text-light">Security</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="text-decoration-none">
+                        <div class="project-card rounded-4 p-4 h-100">
+                            <img src="./assets/images/2fa.png" alt="" class="rounded-4 ">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">2 Factor Authentication</h5>
+                            </div>
+                            <p class="text-muted-2">Extra security layer by requiring a code or approval after your
+                                password. Even if someone steals your password, they can’t access your account without
+                                the second factor.</p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge project-tag bg-dark text-light">Cyber Safety</span>
+                                <span class="badge project-tag bg-dark text-light">2FA</span>
+                                <span class="badge project-tag bg-dark text-light">Confirm</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="text-decoration-none">
+                        <div class="project-card rounded-4 p-4 h-100">
+                            <img src="./assets/images/link.png" alt="" class="rounded-4 ">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">Avoid Suspicious Links</h5>
+                            </div>
+                            <p class="text-muted-2">Never click links from emails, texts, or DMs that look suspicious or
+                                too good to be true. Always check the sender’s address and website URL before visiting a
+                                site.</p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge project-tag bg-dark text-light">Cyber Safety</span>
+                                <span class="badge project-tag bg-dark text-light">Links</span>
+                                <span class="badge project-tag bg-dark text-light">Suspicious</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="text-decoration-none">
+                        <div class="project-card rounded-4 p-4 h-100">
+                            <img src="./assets/images/device.png" alt="" class="rounded-4 ">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">Device Security</h5>
+                            </div>
+                            <p class="text-muted-2">Update Devices & Apps <br>
+                                Use Antivirus Protection <br>
+                                Scan for malware weekly <br>
+                                Install trusted apps <br>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge project-tag bg-dark text-light">Cyber Safety</span>
+                                <span class="badge project-tag bg-dark text-light">Antivirus</span>
+                                <span class="badge project-tag bg-dark text-light">Update</span>
+                            </div>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="text-decoration-none">
+                        <div class="project-card rounded-4 p-4 h-100">
+                            <img src="./assets/images/social.png" alt="" class="rounded-4 ">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">Social Media Safety</h5>
+                            </div>
+                            <p class="text-muted-2">Be careful with online quizzes or “free gift” links <br>
+                                Never share your OTP or passwords <br>
+                                Don’t overshare personal details <br>
+                                Beware of Cookie loggers & Phishing links
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge project-tag bg-dark text-light">Cyber Safety</span>
+                                <span class="badge project-tag bg-dark text-light">Media</span>
+                                <span class="badge project-tag bg-dark text-light">Share</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="text-decoration-none">
+                        <div class="project-card rounded-4 p-4 h-100">
+                            <img src="./assets/images/cloud.png" alt="" class="rounded-4 ">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">Cloud Security</h5>
+                            </div>
+                            <p class="text-muted-2">Cloud security means protecting data, applications, and services
+                                stored on the internet (“the cloud”).
+                                It ensures that your files, backups, and online systems are safe, private, and always
+                                available.</p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge project-tag bg-dark text-light">Cyber Safety</span>
+                                <span class="badge project-tag bg-dark text-light">Cloud</span>
+                                <span class="badge project-tag bg-dark text-light">Encryption</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="divider" id="contact-top"></div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5 mb-5">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title fw-bold mb-3">Let's work together</h2>
+                    <p class="text-muted-2 mb-4">Tell me about your ideas on how we can make the internet a safer place
+                        for all.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a class="btn btn-primary btn-sm btn-glow" href="mailto:zmarzanur@gmail.com"><i
+                                class="fa-regular fa-envelope me-2"></i>Email Me</a>
+                        <a class="btn btn-outline-light btn-sm" href="https://wa.me/+8801552545262" target="_blank"><i
+                                class="fa-brands fa-whatsapp me-2"></i>WhatsApp</a>
+                        <a class="btn btn-outline-light btn-sm" href="https://github.com/MarzanurZarif"
+                            target="_blank"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+                        <!-- <a class="btn btn-outline-light btn-lg" href="#" target="_blank"><i
+                                class="fa-brands fa-linkedin me-2"></i>LinkedIn</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-4 rounded-4" style="background:#0f0a1f;border:1px solid rgba(255,255,255,.08);">
+                        <div class="row g-3">
+                            <div class="col-6"><small class="text-muted-2">Based in</small>
+                                <div>Dhaka, Bangladesh</div>
+                            </div>
+                            <div class="col-6"><small class="text-muted-2">Timezone</small>
+                                <div>GMT+6</div>
+                            </div>
+                            <div class="col-6"><small class="text-muted-2">Preferred</small>
+                                <div>Awareness</div>
+                            </div>
+                            <div class="col-6"><small class="text-muted-2">Languages</small>
+                                <div>EN • BN</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 text-center">
+        <strong>Built with ❤️</strong>
+        <br>
+        <small>© <span id="year"></span> Marzanur Zarif. All Rights Reserved.</small>
+    </footer>
+
+    <!-- Loads -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d728883de8.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
