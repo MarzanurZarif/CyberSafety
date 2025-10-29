@@ -119,12 +119,8 @@ nav ul li {
 
 .nav-item-logo h1 {
     font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    color: white;
+    font-weight: bold;
     font-family: "Bitcount Grid Single", system-ui;
-    ;
 }
 
 .nav-item-logo:hover {
@@ -581,6 +577,79 @@ nav .overlay-bg {
         position: absolute;
         right: 10%;
     }
+}
+
+/* --------------------------- PAGE --------------------------- */
+
+.section-title {
+    letter-spacing: .5px;
+}
+
+.text-muted-2 {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.badge-skill {
+    background: rgba(118, 60, 172, 0.15);
+    color: #e9d5ff;
+    border: 1px solid rgba(118, 60, 172, 0.35);
+}
+
+.btn-sm {
+    text-align: center;
+    align-items: center;
+    padding: 8px 24px;
+}
+
+.btn-glow {
+    position: relative;
+    border: none;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 0.75rem rgba(118, 60, 172, 0.55);
+}
+
+.project-card {
+    background: #151027;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: transform .25s ease, box-shadow .25s ease;
+    height: 100%;
+    cursor: pointer;
+    color: var(--bd-violet);
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px -8px rgba(118, 60, 172, 0.45);
+}
+
+.project-tag {
+    font-size: .75rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    margin: 3rem 0;
+}
+
+a.link-underline {
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.35);
+}
+
+a.link-underline:hover {
+    border-color: #fff;
+}
+
+footer {
+    background: radial-gradient(600px 300px at 10% 10%, rgba(118, 60, 172, 0.25), transparent 60%),
+        radial-gradient(450px 250px at 90% 20%, rgba(29, 78, 216, 0.18), transparent 60%),
+        linear-gradient(135deg, #12041F 0%, #0E0B1A 35%, #0C0A1A 100%);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 /* --------------------------- PAGE --------------------------- */
